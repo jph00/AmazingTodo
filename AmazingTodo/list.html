@@ -1,0 +1,29 @@
+﻿<form class="form-search">
+    <div class="input-append">
+        <input type="text" ng-model="query" class="input-medium search-query" placeholder="Search">
+        <button ng-click="reset()" type="submit" class="btn"><i class="icon-search"></i></button>
+    </div>
+    <button ng-click="query=''; reset()" ng-disabled="!query" type="submit" class="btn">Reset</button>
+</form>
+
+<table class="table table-striped table-condensed table-hover">
+    <thead>
+        <th sorted="Todo">Todo</th>
+        <th sorted="Priority">Priority</th>
+        <th sorted="DueDate">Due</th>
+        <th><a href="#/new"><i class="icon-plus-sign"></i></a></th>
+    </thead>
+    <tbody>
+        <tr ng-repeat="item in items" id="item_{{item.TodoItemId}}">
+            <td>{{item.Todo}}</td>
+            <td>{{item.Priority}}</td>
+            <td>{{item.DueDate}}</td>
+            <td>
+                <a href="#/edit/{{item.TodoItemId}}"><i class="icon-edit"></i></a>
+                <a ng-click="delete()"><i class="icon-remove"></i></a>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<a href="" ng-click = "offset = offset + limit; search()" 
+    ng-show ="show_more()">Show more</a>
