@@ -40,8 +40,7 @@ var ListCtrl = function ($scope, $location, Todo) {
         if ($scope.sort_order == ord) { $scope.sort_desc = !$scope.sort_desc; }
         else { $scope.sort_desc = false; }
         $scope.sort_order = ord;
-        $scope.items = [];
-        $scope.search();
+        $scope.reset();
     };
 
     $scope.delete = function () {
