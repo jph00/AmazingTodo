@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>Angular.UI</id>
+    <version>0.3.2.1</version>
+    <title>AngularUI</title>
+    <authors>AngularUI Team (Packaged by Jeremy Howard)</authors>
+    <owners>AngularUI Team (Packaged by Jeremy Howard)</owners>
+    <licenseUrl>http://opensource.org/licenses/MIT</licenseUrl>
+    <projectUrl>http://angular-ui.github.com/</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>The enhancement companion suite to the AngularJS framework</description>
+    <language>en-US</language>
+    <dependencies>
+      <dependency id="angularjs" version="1.0.3" />
+      <dependency id="Select2.js" version="3.2" />
+    </dependencies>
+    <references />
+  </metadata>
+</package>

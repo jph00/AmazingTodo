@@ -49,7 +49,6 @@ var ListCtrl = function ($scope, $location, Todo) {
             $("#item_" + itemId).fadeOut();
         });
     };
-
     
     $scope.limit = 20;
     $scope.sort_order = 'Priority';
